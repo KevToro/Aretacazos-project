@@ -1,0 +1,27 @@
+#---- Dependencias---
+frontend/node_modules
+backend/node_modules
+
+#VARIABLES DE ENTORNO
+.env    
+.env.local
+.env.development.local
+.env.production.local
+
+# --- ARCHIVOS COMPILADOS Y BUILDS ---
+frontend/build/
+frontend/dist/
+backend/dist/
+backend/build/
+
+# --- ARCHIVOS DE SISTEMA Y EDITOR ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- ARCHIVOS DE SISTEMA Y EDITOR ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
