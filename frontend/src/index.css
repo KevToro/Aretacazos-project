@@ -1,0 +1,39 @@
+@import "./styles/variables.css";
+@import "./styles/global.css";
+
+
+
+/* ===========================
+   RESET
+=========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   HTML
+=========================== */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+ 

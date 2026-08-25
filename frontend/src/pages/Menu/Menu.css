@@ -1,0 +1,17 @@
+.menu {
+  min-height: 100vh;
+  padding: 120px 40px 60px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.menu h1 {
+  margin-bottom: 16px;
+  color: var(--color-primary);
+  font-size: 3rem;
+}
+
+.menu p {
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
