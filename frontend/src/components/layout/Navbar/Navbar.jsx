@@ -1,31 +1,22 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+
 
 function Navbar() {
   return (
     <header className="navbar">
       <nav className="navbar__container">
 
-        <a href="/" className="navbar__logo">
+        <Link to="/" className="navbar__logo">
            ARETACAZOS
-        </a>
+        </Link>
 
-        <ul className="navbar__links">
-          <li>
-            <a href="/">Inicio</a>
-          </li>
-
-          <li>
-            <a href="#menu">Menú</a>
-          </li>
-
-          <li>
-            <a href="#nosotros">Nosotros</a>
-          </li>
-
-          <li>
-            <a href="#contacto">Contacto</a>
-          </li>
-        </ul>
+        <div className="navbar__links">
+          <Link to="/">Inicio</Link>
+          <Link to="/menu">Menú</Link>
+          <Link to="/nosotros">Nosotros</Link>
+          <Link to="/contacto">Contacto</Link>
+        </div>
 
         <button className="navbar__button">
           Registrarme
