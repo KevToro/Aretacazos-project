@@ -53,7 +53,9 @@ function Menu() {
 
       </section>
 
-      <MenuNavigation categories={categories}  />
+      <MenuNavigation categories={categories} />
+
+      
 
       {loading ? (
 
@@ -70,14 +72,6 @@ function Menu() {
               id={category.name.toLowerCase().replace(/\s+/g, "-")}
               className="menu__category"
             >
-
-              <div className="menu__category-header">
-
-                <span>
-                  {category.name}
-                </span>
-
-              </div>
 
               <div className="menu__products">
 

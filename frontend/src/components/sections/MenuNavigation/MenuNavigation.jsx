@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import "./MenuNavigation.css";
 
 function MenuNavigation({ categories }) {
+
   const navigationRef = useRef(null);
 
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -22,21 +23,30 @@ function MenuNavigation({ categories }) {
 
   useEffect(() => {
 
-    updateScrollButtons();
+  const element = navigationRef.current;
 
-    const element = navigationRef.current;
+  if (!element) return;
 
-    if (!element) return;
+  const checkScroll = () => {
+    setCanScrollLeft(element.scrollLeft > 0);
 
-    element.addEventListener("scroll", updateScrollButtons);
-    window.addEventListener("resize", updateScrollButtons);
+    setCanScrollRight(
+      element.scrollWidth > element.clientWidth &&
+      element.scrollLeft + element.clientWidth < element.scrollWidth - 1
+    );
+  };
 
-    return () => {
-      element.removeEventListener("scroll", updateScrollButtons);
-      window.removeEventListener("resize", updateScrollButtons);
-    };
+  checkScroll();
 
-  }, [categories]);
+  element.addEventListener("scroll", checkScroll);
+  window.addEventListener("resize", checkScroll);
+
+  return () => {
+    element.removeEventListener("scroll", checkScroll);
+    window.removeEventListener("resize", checkScroll);
+  };
+
+}, [categories]);
 
 
   const scrollNavigation = (direction) => {

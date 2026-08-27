@@ -48,28 +48,42 @@
 ========================= */
 .menu-navigation__arrow {
   flex-shrink: 0;
-  width: 45px;
-  height: 45px;
-  margin: 0 8px;
+  width: 46px;
+  height: 46px;
+  margin: 0 10px;
   border: none;
-  border-radius: 50%;
-  background-color: rgba(249, 168, 37, 0.12);
+  border-radius: 14px;
+  background-color: #F9A825;
   color: #FFF8E1;
-  font-size: 2rem;
+  font-size: 30px;
+  font-weight: 700;
   line-height: 1;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow:
+    6px 6px 12px rgba(45, 28, 23, 0.45),
+    -6px -6px 12px rgba(126, 91, 78, 0.35);
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
 }
 .menu-navigation__arrow:hover {
-  background-color: #F9A825;
-  color: #5D4037;
-  transform: scale(1.05);
+  .menu-navigation__arrow:hover {
+  color: #F9A825;
+  transform: translateY(-2px);
+  box-shadow:
+    8px 8px 16px rgba(45, 28, 23, 0.45),
+    -8px -8px 16px rgba(126, 91, 78, 0.35);
+}
+}
+.menu-navigation__arrow:active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 4px 4px 8px rgba(45, 28, 23, 0.4),
+    inset -4px -4px 8px rgba(126, 91, 78, 0.3);
 }
 /* =========================
    TABLET
