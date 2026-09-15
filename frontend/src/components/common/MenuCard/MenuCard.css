@@ -1,0 +1,143 @@
+.menu-card {
+  overflow: hidden;
+
+  background-color: #fff8e1;
+
+  border: 1px solid #5d4037;
+  border-radius: 18px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 12px 30px rgba(93, 64, 55, 0.18);
+}
+
+
+/* =========================
+   IMAGEN
+========================= */
+
+.menu-card__image {
+  width: 100%;
+  height: 230px;
+
+  overflow: hidden;
+
+  background-color: #a77216;
+}
+
+.menu-card__image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover .menu-card__image img {
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.menu-card__image-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff8e1;
+
+  font-size: 1.2rem;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.menu-card__content {
+  padding: 22px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.menu-card__info h3 {
+  margin: 0 0 8px;
+
+  color: #5d4037;
+
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.menu-card__info p {
+  margin: 0;
+
+  color: #5d4037;
+
+  font-size: 0.95rem;
+
+  line-height: 1.6;
+}
+
+/* =========================
+   VARIANTES / PRECIOS
+========================= */
+
+.menu-card__variants {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.menu-card__variant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 10px 12px;
+
+  border: 1px solid rgba(93, 64, 55, 0.18);
+  border-radius: 10px;
+
+  background-color: rgba(249, 168, 37, 0.08);
+}
+
+.menu-card__variant-name {
+  color: #5d4037;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.menu-card__variant-price {
+  color: #bf360c;
+  font-size: 0.95rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.menu__category {
+  scroll-margin-top: 140px;
+}

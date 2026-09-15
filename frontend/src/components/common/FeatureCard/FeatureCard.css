@@ -1,0 +1,26 @@
+.feature-card {
+  background-color: rgba(255, 248, 225, 0.35);
+ border: 2px solid rgba(93, 64, 55, 0.65);
+  border-radius: 16px;
+  padding: 28px 24px;
+
+  box-shadow: 0 8px 20px rgba(62, 39, 35, 0.12);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(62, 39, 35, 0.18);
+}
+
+.feature-card h3 {
+  color: #5D4037;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+}
+
+.feature-card p {
+  color: #5D4037;
+  line-height: 1.6;
+}

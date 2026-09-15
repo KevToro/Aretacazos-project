@@ -1,0 +1,49 @@
+:root {
+  /* ================================
+     COLORES — ARETACAZOS
+     ================================ */
+
+  --color-primary: #5d4037;
+  --color-secondary: #bf360c;
+  --color-accent: #f9a825;
+  --color-contrast: #0277bd;
+  --color-background:#E8C46A;
+
+  /* ================================
+     COLORES DE TEXTO
+     ================================ */
+
+  --color-text: #5d4037;
+  --color-text-light:#F6DFA6;
+
+  /* ================================
+     ESPACIADO
+     ================================ */
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* ================================
+     BORDES
+     ================================ */
+
+  --border-radius-sm: 6px;
+  --border-radius-md: 10px;
+  --border-radius-lg: 20px;
+
+  /* ================================
+     TRANSICIONES
+     ================================ */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  /* ================================
+     CONTENEDOR
+     ================================ */
+
+  --container-width: 1200px;
+}

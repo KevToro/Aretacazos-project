@@ -1,0 +1,125 @@
+.menu-navigation {
+  position: sticky;
+  top: 80px;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #5D4037;
+  border-top: 1px solid rgba(249, 168, 37, 0.25);
+  border-bottom: 1px solid rgba(249, 168, 37, 0.25);
+}
+/* =========================
+   CONTENEDOR SCROLL
+========================= */
+.menu-navigation__scroll {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 16px 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.menu-navigation__scroll::-webkit-scrollbar {
+  display: none;
+}
+/* =========================
+   CATEGORÍAS
+========================= */
+.menu-navigation__scroll a {
+  flex-shrink: 0;
+  color: #FFF8E1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+.menu-navigation__scroll a:hover {
+  color: #F9A825;
+}
+/* =========================
+   FLECHAS
+========================= */
+.menu-navigation__arrow {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 14px;
+  background-color: #F9A825;
+  color: #FFF8E1;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    6px 6px 12px rgba(45, 28, 23, 0.45),
+    -6px -6px 12px rgba(126, 91, 78, 0.35);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+.menu-navigation__arrow:hover {
+  .menu-navigation__arrow:hover {
+  color: #F9A825;
+  transform: translateY(-2px);
+  box-shadow:
+    8px 8px 16px rgba(45, 28, 23, 0.45),
+    -8px -8px 16px rgba(126, 91, 78, 0.35);
+}
+}
+.menu-navigation__arrow:active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 4px 4px 8px rgba(45, 28, 23, 0.4),
+    inset -4px -4px 8px rgba(126, 91, 78, 0.3);
+}
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 900px) {
+  .menu-navigation__scroll {
+    justify-content: flex-start;
+    gap: 24px;
+  }
+}
+
+/* =========================
+   MÓVIL
+========================= */
+@media (max-width: 600px) {
+  .menu-navigation {
+    top: 70px;
+
+  }
+  .menu-navigation__scroll {
+    justify-content: flex-start;
+    gap: 22px;
+    padding: 14px 12px;
+
+  }
+  .menu-navigation__scroll a {
+    font-size: 0.8rem;
+
+  }
+  .menu-navigation__arrow {
+
+    width: 36px;
+    height: 36px;
+    margin: 0 4px;
+    font-size: 1.6rem;
+
+  }
+
+}
